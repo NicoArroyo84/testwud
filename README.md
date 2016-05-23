@@ -6,7 +6,7 @@ In the users view (users in the menu) a list of the current users are displayed 
 
 First and last names are mandatory. Email is not mandatory but needs to be valid.
 
-## Resume
+## Summary
 
 A user service has been created to communicate the server and the user controller.
 
