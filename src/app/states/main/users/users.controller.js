@@ -13,14 +13,19 @@
     vm.errorGetUsers = false;
     vm.Open = Open;
 
-    UserService.getUsers().then(function(users){
-      vm.errorGetUsers = false;
-      if(users && users.data){
-        vm.usersList = users.data;
-      }
-    }, function(){
-      vm.errorGetUsers = true;
-    });
+	LoadUsers();
+	
+	function LoadUsers() {
+	  UserService.getUsers().then(function(users){
+		  vm.errorGetUsers = false;
+		  if(users && users.data){
+			vm.usersList = users.data;
+		  }
+		}, function(){
+		  vm.errorGetUsers = true;
+		});
+	}
+	
 
     //open modal to add new user and inject the list of users to update the list when the new user is created
     function Open() {
@@ -40,3 +45,4 @@
   }
 
 })();
+
