@@ -27,6 +27,7 @@ Clone the git project.
 Install dependencies.
 ```
 npm install
+bower install
 ```
 Run server API.
 ```
