@@ -2,6 +2,10 @@
 
 The app shows a list of users retrieved using a simple server API as well as allowing to save new users.
 
+In the users view (users in the menu) a list of the current users are display in a table with their data. New users can be added by clicking on "Add User" button and completing the form.
+
+First and last name are mandatory. Email is not mandatory but needs to be a valid email.
+
 ## Resume
 
 A user service has been created to communicate between the server and our controller.
