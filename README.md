@@ -1,25 +1,24 @@
 # Wud Technical Test
 
-The app shows a list of users retrieved using a simple server API as well as allowing to save new users.
+The app shows a list of users retrieved by using a simple server API and allowing to save new users.
 
-In the users view (users in the menu) a list of the current users are display in a table with their data. New users can be added by clicking on "Add User" button and completing the form.
+In the users view (users in the menu) a list of the current users are displayed in a table with their data. New users can be added by clicking on "Add User" button and completing the form.
 
-First and last name are mandatory. Email is not mandatory but needs to be a valid email.
+First and last names are mandatory. Email is not mandatory but needs to be valid.
 
 ## Resume
 
-A user service has been created to communicate between the server and our controller.
+A user service has been created to communicate the server and the user controller.
 
-The server API service is implemented in api/server.js. The request header has been modified to allow CORS operations in all operations.
+The server API service is allocated in api/server.js. The request header has been modified to allow all CORS request operations.
 
-To create the navbar wudNavbar dynamically the states are get in the component controller, then using the ngrepeat directiveall the states with a label property are created. To know which states have a label defined a custom filter has been applied (isUndefined) in its controller.
+To create the navbar wudNavbar dynamically the states are get in the component controller, then using ngrepeat directive to populate all the states that has a "label" property. To know which states have this property defined a custom filter has been applied (isUndefined) in its controller.
 
-To validate the email a directive (validateEmail) with this porpuse has been added which is been used in the user creation form, overwriting the angular default one (default one allows for instance email@sun.xx with ".xx".
+In order to validate the email a directive (validateEmail) with this porpuse has been added which is used in the user creation form, overwriting the angular default one (default one allows for instance email@sun.xx with ".xx".
 
 ### Prerequisities
 
 Nodejs npm and gulp to run it
-
 
 ### Installing
 
@@ -38,9 +37,8 @@ In another cmd window run the serve the app with gulp.
 gulp serve
 ```
 
-
 ## Author
 
-* **Nicolas Arroyo** 
+* Nicolas Arroyo
 
 
